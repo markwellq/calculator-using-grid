@@ -1,0 +1,99 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	font-family: 'Roboto', serif;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+body {
+	margin-top: 200px;
+	background-color: #07979c;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 70px);
+	grid-template-rows: 70px 70px 70px 70px 70px;
+	width: 330px;
+	border-radius: 20px;
+	gap: 20px;
+	padding: 30px;
+	margin: 25px auto;
+	background-color: #b6b5b3;
+}
+
+.container div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 10px;
+	cursor: pointer;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+
+	color: #fff;
+	background-color: rgb(160, 160, 160);
+	/* Box Shadow */
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.6);
+	transition: 0.3s;
+}
+
+.container div i {
+	font-size: 28px;
+}
+
+.container div:hover {
+	color: #effbee;
+	background-color: rgb(124, 124, 124);
+}
+
+.calc__numlock {
+	font-size: 15px !important;
+}
+
+.top-text {
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	font-size: 20px;
+}
+
+.under-text {
+	position: absolute;
+	right: 10px;
+	bottom: 3px;
+	font-size: 10px;
+}
+
+.arrow-up,
+.arrow-bottom,
+.arrow-left,
+.arrow-right {
+	position: absolute;
+	font-size: 1px;
+	bottom: 3px;
+	right: 3px;
+}
+
+.calc__plus {
+	grid-column: 4;
+	grid-row: 3 / span 2;
+}
+
+.calc__enter {
+	grid-column: 4;
+	grid-row: 5 / span 2;
+}
+
+.calc__0 {
+	grid-column: 1 / span 2;
+}
